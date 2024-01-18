@@ -18,12 +18,12 @@
         MainParagraph.setAttribute("id","MainParagraph");
         MainParagraph.setAttribute("class","mt-3");
 
-        MainParagraph.textContent = "This is the first Paragraph";
+        MainParagraph.textContent = "This is the first paragraph";
 
         MainContent.appendChild(MainParagraph);
 
-        let FirstString = "This is";
-        let SecondString = `${FirstString}The Main Paragraph`;
+        let FirstString = "This is ";
+        let SecondString = `${FirstString}the main paragraph`;
         MainParagraph.textContent = SecondString;
         MainContent.appendChild(MainParagraph);
 
@@ -33,7 +33,7 @@
         let articleParagraph = `<p id="ArticleParagraph" class="mt-3">This is my article paragraph</p>`;
 
         Article.setAttribute("class", "container");
-        Article.innerHTML = ArticleParagraph;
+        Article.innerHTML = articleParagraph;
         DocumentBody.appendChild(Article);
     }
 
@@ -77,5 +77,5 @@
                 break;
         }
     }
-    window.addEventListener( "Load", Start);
+    window.addEventListener( "load", Start);
 })(); // This is how you declare a function
